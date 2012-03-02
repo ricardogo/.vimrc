@@ -39,3 +39,10 @@ set smartcase
 set nocompatible
 
 set modelines=0
+
+" plugin management
+call pathogen#infect()
+
+" colors
+set background=dark
+colorscheme solarized
