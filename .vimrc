@@ -30,6 +30,12 @@ set laststatus=2
 syntax enable
 filetype plugin indent on
 
+" Handle line length
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+
 "" searching
 set hlsearch
 set incsearch
@@ -45,4 +51,18 @@ call pathogen#infect()
 
 " colors
 set background=dark
+"let g:solarized_termcolors=256
 colorscheme solarized
+
+" change leader key
+let mapleader=","
+
+"" key mappings
+" ,ft to fold HTML tags
+set foldmethod=manual
+nnoremap <Space> Vatzf
+
+" open NERDTree
+nnoremap m :NERDTree<Enter>
+
+au BufRead,BufNewFile *.scss set filetype=scss
