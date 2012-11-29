@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/internal/Documents/Projects/Wordpress.IA4/iA4 Prototype/js'
-let g:netrw_dirhist_2='/Users/internal/Documents/Projects/ia4/wp-content/themes/iA4/stylesheets'
-let g:netrw_dirhist_3='/private/etc/apache2/extra'
-let g:netrw_dirhist_4='/Users/internal/Documents/Projects/UBS/templates'
-let g:netrw_dirhist_5='/Users/internal/.vim'
