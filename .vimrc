@@ -31,8 +31,8 @@ syntax enable
 filetype plugin indent on
 
 " Handle line length
-set wrap
-set textwidth=79
+set wrap textwidth=0
+"set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
@@ -50,19 +50,24 @@ set modelines=0
 call pathogen#infect()
 
 " colors
-set background=dark
-"let g:solarized_termcolors=256
-colorscheme solarized
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized 
 
 " change leader key
 let mapleader=","
 
+" folds
+set foldmethod=manual
+set foldlevelstart=20
+
+
 "" key mappings
 " ,ft to fold HTML tags
-set foldmethod=manual
 nnoremap <Space> Vatzf
 
 " open NERDTree
 nnoremap m :NERDTree<Enter>
 
 au BufRead,BufNewFile *.scss set filetype=scss
+au FileType javascript call JavaScriptFold()
